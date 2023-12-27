@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+
+a:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: gray;
+    width: 100%;
+    margin-bottom: 10px;
+    color: orange;
+    text-shadow: 2px 2px 10px black;
+    box-shadow: 0px 0px 10px black;
+    font-family: RubikDoodle;
+}
+
+.content .navigation button {
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-weight: 600;
+    font-size: medium;
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content .navigation .nav-options {
+    display: none;
+}
+
+.content .navigation .show-menu-drop {
+    background-color: rgba(122, 122, 122, 0.904);
+    position: absolute;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.content .welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    text-align: center;
+    gap: 20px;
+    font-family: RubikDoodle;
+}
+
+.content .welcome h1 {
+    font-size: 45px;
+}
+
+.content .welcome h1::after {
+    content: "...";
+    display: flex;
+    flex-direction: column;
+}
+
+.content .welcome p {
+    font-family: RubikDoodle;
+    font-weight: 600;
+}
+
+.content .welcome:after {
+    content: url("./images/PiepsmitTasseico.ico");
+}
+
+
+
+
+@media (max-width: 700px) {
+    .content .heading {
+        gap: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content .heading {
+        gap: 300px;
+    }
+}

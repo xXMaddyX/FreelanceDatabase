@@ -1,0 +1,177 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+
+a:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(180, 180, 180);
+    height: fit-content;
+}
+
+.content .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: gray;
+    width: 100%;
+    margin-bottom: 10px;
+    color: orange;
+    text-shadow: 2px 2px 10px black;
+    box-shadow: 0px 0px 10px black;
+    font-family: RubikDoodle;
+}
+
+.content .navigation button {
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-weight: 600;
+    font-size: medium;
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content .navigation .nav-options {
+    display: none;
+}
+
+.content .navigation .show-menu-drop {
+    background-color: rgba(122, 122, 122, 0.904);
+    position: absolute;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.content .bow-manufacturer button {
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-weight: 600;
+    font-size: medium;
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content .bow-manufacturer .bow-options {
+    display: none;
+}
+
+.content .bow-manufacturer .show-bow-options {
+    background-color: rgba(122, 122, 122, 0.904);
+    position: absolute;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.bow-drop-text {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+    cursor: pointer;
+}
+
+.bow-drop-text:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.content .database {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+
+.content .database .data-container {
+    animation: fadeIn;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    width: 95%;
+    gap: 20px;
+    background-color: rgb(150, 150, 150);
+}
+
+.content .database .data-container .heading-data {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+    border-right: 1px solid black;
+    text-shadow: 2px 2px 10px rgb(80, 80, 80);
+    min-width: 25%;
+    min-height: 100%;
+}
+
+.content .database .data-container .text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .content .heading {
+        gap: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content .heading {
+        gap: 300px;
+    }
+}
