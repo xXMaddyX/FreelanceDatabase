@@ -48,7 +48,6 @@ const createDataContainer = (dataItem) => {
         };
     };
     
-    
     container.innerHTML = headingData;
     container.appendChild(textData);
 
